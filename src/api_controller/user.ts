@@ -1,7 +1,6 @@
 import { Request, Response, NextFunction } from "express";
 import responder from '../utils/responder';
 
-
 import { AppDataSource } from "../data-source";
 
 import { User } from "../entity/User";
@@ -33,12 +32,8 @@ const getAllUser =  async (req: Request, res: Response, next: NextFunction) => {
 	responder(res, allUsers)
 }
 
-const getUser =  async (req: Request, res: Response, next: NextFunction) => {
-	console.log("getAllUsers")
-}
 
 export {
 	createUser,
-	getAllUser,
-	getUser
+	getAllUser
 }

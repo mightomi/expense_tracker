@@ -1,0 +1,26 @@
+GET http://localhost:3000/api/v1/users
+
+###
+
+POST http://localhost:3000/api/v1/user
+content-type: application/json
+
+{
+    "firstName": "samt8ple",
+    "lastName": "WeT"
+}
+
+
+###
+
+POST http://localhost:3000/api/v1/expenses
+content-type: application/json
+
+{
+    "payerId": "fad03f83-94c2-485f-9171-d79dkd52bb1e",
+    "amount": 2000
+}
+
+###
+
+GET  http://localhost:3000/api/v1/settlements

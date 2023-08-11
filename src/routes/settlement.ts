@@ -8,7 +8,6 @@ const router = express.Router();
 
 router.get("/", errorHandlerWrapper(settlement));
 
-
 export {
   router as settlementRoutes
 }

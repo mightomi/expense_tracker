@@ -17,8 +17,8 @@ export class Expense {
   payerId: string;
 
   @Index("amount_idx")
-  @Column({ nullable: false })
-  amount : string;
+  @Column({type: "decimal", precision: 10, scale: 2, nullable: false})
+  amount: number;
 
   @CreateDateColumn({ type: "timestamptz", default: () => "CURRENT_TIMESTAMP()" })
   public created_at: Date;

@@ -4,8 +4,8 @@ import http from 'http';
 import * as middleware from "./middleware";
 import * as routes from "./routes";
 
-console.info(`ok`);
-
+await import("./data-source");
+console.info(`Database conneted ;)`);
 
 
 const app = express();
@@ -19,5 +19,4 @@ const port = process.env.PORT || 3000;
 
 await new Promise<void>((resolve) => httpServer.listen({ port }, resolve));
 console.info(`Listening at http://localhost:${port}`);
-
 
